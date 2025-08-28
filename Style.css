@@ -1,0 +1,338 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+  --color-header: #465158;
+  --color-span: #4bc4f6;
+  --color-secciondos: #4bcaff;
+  --color-seccioncuatro: #515f67;  
+}
+
+
+body{
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+header{
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-around;
+    height: 12vh;
+}
+header div h2{
+    margin-top: 23px;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+}
+
+header span{
+    color: var(--color-span);
+}
+
+.navegador{
+    display: flex;
+    align-items: center;
+    padding-left: 6rem;
+    font-size: 15px; 
+}
+
+.navegador nav a:hover{
+    color: var(--color-span);
+    border: 2px solid var(--color-span);
+    background-color: transparent; 
+}
+
+/* SECCIONPRIMERA */
+
+.seccionPrimera{
+    background-image: url(assets/Fondo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    flex-direction: column;
+    position: relative;
+}
+
+.texto-inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 14%;
+}
+
+.texto-inicio h1 {
+    background-color: var(--color-seccioncuatro);
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+    display: inline-block
+}
+
+.texto-inicio h2 {
+    background-color: var(--color-seccioncuatro);
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-top: 0;
+    display: inline-block
+}
+
+/* SECCIONSEGUNDA */
+
+.seccionsegunda{
+    background-color: var(--color-secciondos);
+    display: grid;
+    gap: 5%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 9% 11% 50px 11%;
+    padding-top: 9%;
+    color: white;
+}
+
+.seccionsegunda img{
+    margin-bottom: 9px;
+}
+
+.seccionsegunda h3{
+    margin-bottom: 8px;
+}
+
+/* SECCIONTERCERA */
+
+.seccionTercera{
+    margin: 0 auto; 
+    padding: 5% 11%;
+}
+
+.PortafolioTercero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    color: #465158;
+     margin-bottom: 5%;
+}
+
+.PortafolioTercero h3 {
+    position: relative;
+}
+
+.PortafolioTercero h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 35px; /* Ajusta este valor para que llegue hasta donde quieres */
+    height: 1px;
+    background-color: #000000;
+}
+
+.navtercero{
+    display: flex;
+    align-items: center;
+    padding-left: 6rem;
+    font-size: 15px; 
+}
+
+.navtercero nav {
+    display: flex; 
+    gap: 1rem;
+}
+
+.navtercero a{
+    text-decoration: none;
+    padding: 10px 20px;
+    color: black;
+}
+
+.navtercero nav a:hover{
+    color: var(--color-span);
+    border: 2px solid var(--color-span);
+    background-color: transparent; 
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 columnas */
+    grid-template-rows: 1fr 1fr; /* 2 filas */
+    gap: 15px;
+}
+
+.galeria img{
+    width: 100%;
+    height: 100%;
+}
+
+/* SECCIONCUATRO */
+
+.seccionCuarta{
+    background-color: var(--color-seccioncuatro);
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    padding: 3% 11%;
+    gap: 1.8rem;
+}
+
+.CuartaIzq{
+    color: white;
+}
+
+.CuartaIzq h2{
+    font-weight: 50;
+    position: relative;
+}
+
+.CuartaIzq h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 35px; /* Ajusta este valor para que llegue hasta donde quieres */
+    height: 1px;
+    background-color: white;
+}
+
+.CuartaIzq p{
+    padding-top: 5%;
+    line-height: 1.3;
+}
+
+.CuartaIzq button{
+    margin-top: 5%;
+    padding: 15px 43px;
+    border: 2px solid #000000;
+    background-color: transparent;
+    transition: transform 0.3s ease;
+}
+
+.CuartaIzq button:hover{
+    border: 2px solid white;
+    background-color: transparent;
+    transform: scale(1.1);
+}
+
+.CuartaDer img{
+    width: 100%;
+    height: 100%;
+}
+
+/* SECCIONQUINTA */
+
+.seccionQuinta{
+    background-color: var(--color-secciondos);
+    padding: 3% 11%;
+    color: #eef2f4;
+    
+}
+
+.QuintaArriba{
+    display: flex;
+    justify-content: space-between;
+}
+
+.QuintaArriba h3{
+    font-size: 24px;
+    font-weight: 50;
+    position: relative;
+}
+
+.QuintaArriba h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 35px; 
+    height: 1px;
+    background-color: white;
+}
+
+.QuintaAbajo{
+    padding-top: 3%;
+    font-size: 24px;
+    opacity: 0.8;
+}
+
+.QuintaEsp2{
+    padding-top: 2%;
+}
+
+.QuintaEsp2 span{
+    font-weight: bold;
+    color: white;
+}
+
+.seccionSexta{
+    background-image: url(assets/bg_whoIs.png);
+    background-position: center;
+    padding: 5% 11%;
+    color: white;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 1.8rem;
+}
+
+.sextaIzq h3{
+    font-size: 24px;
+    font-weight: 50;
+    position: relative;
+}
+
+.sextaIzq h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 35px; 
+    height: 1px;
+    background-color: white;
+}
+
+.sextaIzq p{
+    padding-top: 5%;
+    line-height: 1.5;
+}
+
+.seccionSeptima{
+     padding: 3% 11%;
+    color: black;
+}
+
+.septimaArriba{
+    display: flex;
+    justify-content: space-between;
+}
+
+.septimaArriba h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 35px; 
+    height: 1px;
+    background-color: black;
+}
+
+.septimaAbajo{
+    padding-top: 3%;
+    font-size: 24px;
+    opacity: 0.8;
+}
+
+.septimaEsp{
+     padding-top: 2%;
+     color: var(--color-span)
+}
+
